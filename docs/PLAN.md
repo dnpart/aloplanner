@@ -9,6 +9,8 @@ Mockups (exported from the design canvas) are in `docs/mockups/`:
 
 Treat them as the visual target. Copy in the mockups is sample text.
 
+The canvas source for each screen is in `docs/mockups/source/` (exact sizes, spacing, and colors). It loads Google Fonts and canvas-only scripts, so read it for values; never copy those into the app.
+
 ---
 
 ## Data model
@@ -87,16 +89,16 @@ Backup: export all tables to one JSON file with a schema version. Import validat
 
 ### Phase 0: Foundation
 
-- [ ] Vite + React + TS scaffold, ESLint, Prettier, Vitest
-- [ ] GitHub Actions workflow deploying to GitHub Pages on push to `main`
-- [ ] vite-plugin-pwa so the site works offline after first load
-- [ ] Design tokens as CSS variables (night first), Lexend self-hosted, star-field background
-- [ ] App shell: bottom nav under 600px, rail at 600px and wider, routes for all five sections (placeholder screens)
-- [ ] `<Guide>` component with all character poses, plus speech bubble
-- [ ] Dexie database with Settings and Category tables, migrations set up
-- [ ] Export/import backup screen in Settings
-- [ ] First-time setup: name, sleep hours, get-ready and commute time, text size
-- [ ] Read-aloud helper and button component
+- [x] Vite + React + TS scaffold, ESLint, Prettier, Vitest
+- [x] GitHub Actions workflow deploying to GitHub Pages on push to `main`
+- [x] vite-plugin-pwa so the site works offline after first load
+- [x] Design tokens as CSS variables (night first), Lexend self-hosted, star-field background
+- [x] App shell: bottom nav under 600px, rail at 600px and wider, routes for all five sections (placeholder screens)
+- [x] `<Guide>` component with all character poses, plus speech bubble
+- [x] Dexie database with Settings and Category tables, migrations set up
+- [x] Export/import backup screen in Settings
+- [x] First-time setup: name, sleep hours, get-ready and commute time, text size
+- [x] Read-aloud helper and button component
 
 Done when: he can open the Pages link on his Fold, complete setup, and switch between folded and unfolded without layout breaking.
 
