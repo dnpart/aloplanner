@@ -3,6 +3,7 @@ import { GuideToast } from '../components/GuideToast'
 import { PlanIcon, PlayIcon, StreamIcon, TodayIcon, WorkIcon } from '../components/icons'
 import { labels } from '../content/labels'
 import { useCameBack } from '../hooks/useCameBack'
+import { BlockSheet } from '../screens/today/BlockSheet'
 import './AppShell.css'
 
 const items = [
@@ -36,6 +37,7 @@ export function AppShell() {
         <Outlet />
       </main>
       <GuideToast />
+      <BlockSheet />
     </div>
   )
 }

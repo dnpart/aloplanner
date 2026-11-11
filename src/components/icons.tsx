@@ -103,3 +103,29 @@ export function CheckIcon({ size = 20 }: IconProps) {
     </svg>
   )
 }
+
+export function CloseIcon({ size = 22 }: IconProps) {
+  return (
+    <svg {...base(size)}>
+      <path d="M6 6l12 12M18 6L6 18" />
+    </svg>
+  )
+}
+
+export function EditIcon({ size = 20 }: IconProps) {
+  return (
+    <svg {...base(size)}>
+      <path d="M4 20h4L19 9l-4-4L4 16z" />
+      <path d="M13.5 6.5l4 4" />
+    </svg>
+  )
+}
+
+export function ClockIcon({ size = 16 }: IconProps) {
+  return (
+    <svg {...base(size)}>
+      <circle cx="12" cy="13" r="8" />
+      <path d="M12 9v4l2 2M9 2h6" />
+    </svg>
+  )
+}

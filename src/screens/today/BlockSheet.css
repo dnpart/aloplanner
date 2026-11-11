@@ -1,0 +1,79 @@
+.block-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.block-form__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.cat-option {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--touch);
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--field-border);
+  cursor: pointer;
+}
+
+.cat-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cat-option:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.cat-option:has(input:focus-visible) {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.cat-option__dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.block-form__times {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: var(--space-3);
+}
+
+.block-form__lengths {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.block-form__hint {
+  display: block;
+}
+
+.block-form__notes {
+  padding: var(--space-2) var(--space-3);
+  resize: vertical;
+}
+
+.block-form__actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.block-form__actions .btn {
+  flex: 1;
+}
+
+.field::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
