@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aloplanner – Wind-down</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8EC5FF}a:hover{color:#B8DAFF}
+.lbl{margin:0;font-size:13px;line-height:18px;font-weight:600;letter-spacing:0.06em;color:#B4C0D8}
+.btn{height:52px;border-radius:26px;font-family:inherit;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 18px}
+.row{display:flex;align-items:center;gap:12px;min-height:44px}
+.row input{width:22px;height:22px;accent-color:#7FD6C7;margin:0;flex-shrink:0}
+.row label{font-size:15px;line-height:21px}
+</style>
+</helmet>
+<div style="width: 390px; height: 860px; position: relative; overflow: hidden; font-family: Lexend, 'Atkinson Hyperlegible', Verdana, sans-serif; color: #EEF2FA; background: linear-gradient(180deg, #070C22 0%, #0F1838 60%, #1A2550 100%); letter-spacing: 0.01em; display: flex; flex-direction: column; align-items: center; padding: 28px 24px 24px; box-sizing: border-box; gap: 14px">
+
+<svg aria-hidden="true" width="390" height="860" viewBox="0 0 390 860" style="position: absolute; top: 0; left: 0; pointer-events: none">
+<g fill="#FFFFFF"><circle cx="30" cy="20" r="1.2" opacity="0.8"></circle><circle cx="90" cy="60" r="1" opacity="0.5"></circle><circle cx="300" cy="30" r="1.4" opacity="0.8"></circle><circle cx="360" cy="90" r="1" opacity="0.6"></circle><circle cx="20" cy="220" r="1" opacity="0.4"></circle><circle cx="372" cy="260" r="1.2" opacity="0.5"></circle></g>
+<path d="M330 54a14 14 0 1 1-12-20 11 11 0 0 0 12 20z" fill="#EEF2FA" opacity="0.85"></path>
+</svg>
+
+<div style="position: relative; display: flex; align-items: flex-end; gap: 8px; align-self: stretch">
+<img src="/_blob/7b5f134f9d49ea57dfafaa98dbe8ed9a" alt="Fox, sleepy" style="width: 100px; height: 106px; flex-shrink: 0">
+<div style="flex-grow: 1; background: #24325E; border-radius: 18px 18px 18px 4px; padding: 12px 14px"><p style="margin: 0; font-size: 15px; line-height: 22px">Shift tomorrow. Tonight's mission: be boring. Boring is elite.</p></div>
+</div>
+
+<div style="position: relative; text-align: center; display: flex; flex-direction: column; gap: 2px">
+<p class="lbl">WIND-DOWN · 9:42 PM</p>
+<p style="margin: 0; font-size: 52px; line-height: 60px; font-weight: 600">48 min</p>
+<p style="margin: 0; font-size: 16px; line-height: 23px">until bedtime (10:30)</p>
+</div>
+
+<div style="position: relative; align-self: stretch; background: rgba(30,42,80,0.82); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 12px 16px; display: flex; flex-direction: column; gap: 4px">
+<p class="lbl">TOMORROW</p>
+<p style="margin: 0; font-size: 15px; line-height: 22px"><span style="font-weight: 600; color: #FFB574">Store shift 9 AM – 2 PM</span><br>Alarm 7:30 · Leave by [TIME]</p>
+</div>
+
+<div style="position: relative; align-self: stretch; background: rgba(30,42,80,0.82); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 12px 16px; display: flex; flex-direction: column">
+<p class="lbl">GET READY · 2 OF 5</p>
+<div class="row"><input type="checkbox" id="b1" checked><label for="b1" style="color: #B4C0D8">Alarm set for 7:30</label></div>
+<div class="row"><input type="checkbox" id="b2" checked><label for="b2" style="color: #B4C0D8">Work clothes out</label></div>
+<div class="row"><input type="checkbox" id="b3"><label for="b3">Fill water bottle</label></div>
+<div class="row"><input type="checkbox" id="b4"><label for="b4">Pick tomorrow's breakfast</label></div>
+<div class="row"><input type="checkbox" id="b5"><label for="b5">Phone charging, out of reach</label></div>
+</div>
+
+<div style="flex-grow: 1"></div>
+<div style="position: relative; align-self: stretch; display: flex; flex-direction: column; gap: 10px">
+<button class="btn" style="border: none; background: #7FD6C7; color: #0B1330">I'm heading to bed</button>
+<button class="btn" style="border: 2px solid #7FD6C7; background: transparent; color: #A8E6DB">Remind me in 15 min (1 left)</button>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":860}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

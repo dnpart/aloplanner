@@ -3,5 +3,5 @@ dev-dist
 coverage
 node_modules
 package-lock.json
-docs/mockups/*.html
+docs/mockups/source
 src/assets/characters/*.svg

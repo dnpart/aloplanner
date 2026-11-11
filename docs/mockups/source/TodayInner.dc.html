@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aloplanner – Today (inner screen)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8EC5FF}a:hover{color:#B8DAFF}
+.card{background:rgba(30,42,80,0.82);border:1px solid rgba(255,255,255,0.08);border-radius:20px}
+.chip{display:inline-flex;align-items:center;font-size:13px;line-height:18px;font-weight:500;padding:3px 10px;border-radius:12px;color:#0B1330}
+.ib{width:44px;height:44px;border-radius:22px;border:none;background:rgba(255,255,255,0.1);color:#EEF2FA;display:flex;align-items:center;justify-content:center}
+.lbl{margin:0;font-size:13px;line-height:18px;font-weight:600;letter-spacing:0.06em;color:#B4C0D8}
+.btn{height:48px;border-radius:24px;font-family:inherit;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 18px}
+.btn-p{border:none;background:#8EC5FF;color:#0B1330}
+.btn-s{border:2px solid #8EC5FF;background:transparent;color:#B8DAFF}
+.rail{width:80px;flex-shrink:0;background:rgba(11,19,48,0.94);border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;align-items:center;gap:6px;padding:20px 0}
+.rail a{width:64px;height:58px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#B4C0D8;font-size:12px}
+.rail a.on{color:#B8DAFF;font-weight:600}
+.pill{width:52px;height:28px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.rail a.on .pill{background:rgba(142,197,255,0.2)}
+.row{display:flex;align-items:center;gap:12px;min-height:44px}
+.row input{width:22px;height:22px;accent-color:#8EC5FF;margin:0;flex-shrink:0}
+.row label{font-size:15px;line-height:21px}
+.hr{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.08)}
+.hl{position:absolute;left:0;width:48px;font-size:12px;color:#B4C0D8;transform:translateY(-8px)}
+.blk{position:absolute;left:56px;right:0;border-radius:12px;padding:6px 10px;box-sizing:border-box;color:#0B1330;font-size:14px;line-height:19px;font-weight:500;overflow:hidden}
+</style>
+</helmet>
+<div style="width: 760px; height: 820px; position: relative; overflow: hidden; display: flex; font-family: Lexend, 'Atkinson Hyperlegible', Verdana, sans-serif; color: #EEF2FA; background: linear-gradient(180deg, #0B1330 0%, #17224A 55%, #24325E 100%); letter-spacing: 0.01em">
+
+<nav class="rail" aria-label="Main">
+<a href="#" class="on" aria-current="page"><span class="pill"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l4 5h8l4-5v8c0 5-4 9-8 9s-8-4-8-9z"></path><path d="M9.5 13h.01M14.5 13h.01"></path></svg></span>Today</a>
+<a href="Calendar.dc.html"><span class="pill"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></span>Plan</a>
+<a href="Stream.dc.html"><span class="pill"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="2"></circle><path d="M8 8a6 6 0 0 0 0 8M16 8a6 6 0 0 1 0 8M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"></path></svg></span>Stream</a>
+<a href="Commissions.dc.html"><span class="pill"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"></path></svg></span>Work</a>
+<a href="#"><span class="pill"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="11" rx="5"></rect><path d="M7 11v3M5.5 12.5h3"></path><circle cx="16" cy="11.5" r="1"></circle><circle cx="18" cy="13.5" r="1"></circle></svg></span>Play</a>
+<div style="flex-grow: 1"></div>
+<button aria-label="Brain dump" style="width: 56px; height: 56px; border-radius: 18px; border: none; background: #EEF2FA; color: #0B1330; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></button>
+</nav>
+
+<div style="flex-grow: 1; display: flex; gap: 20px; padding: 20px; position: relative">
+
+<div style="width: 320px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; gap: 8px">
+<div style="flex-grow: 1"><h1 style="margin: 0; font-size: 22px; line-height: 28px; font-weight: 600">Evening, [NAME]</h1><p style="margin: 0; font-size: 14px; line-height: 20px; color: #B4C0D8">Mon, Nov 10 · 7:42 PM</p></div>
+<button class="ib" aria-label="Read this screen aloud"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"></path><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"></path></svg></button>
+</div>
+<div style="display: flex; align-items: flex-end; gap: 8px">
+<img src="/_blob/6041c9cb9343bfc182f1f7f0a96b4e01" alt="Owl in bow tie, teaching" style="width: 76px; height: 80px; flex-shrink: 0">
+<div style="flex-grow: 1; background: #24325E; border-radius: 18px 18px 18px 4px; padding: 10px 14px"><p style="margin: 0; font-size: 15px; line-height: 22px">Unfolded means planning mode. Drag blocks on the right to reshape tonight.</p></div>
+</div>
+<div class="card" style="padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px; align-items: center">
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+<p class="lbl">RIGHT NOW · 7:00–8:00</p>
+<h2 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600">Rig arm physics for [CLIENT A]</h2>
+<span class="chip" style="align-self: flex-start; background: #F4A3C0">Commission</span>
+</div>
+<svg role="img" aria-label="18 minutes left of 60" width="88" height="88" viewBox="0 0 96 96">
+<circle cx="48" cy="48" r="40" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="10"></circle>
+<circle cx="48" cy="48" r="40" fill="none" stroke="#8EC5FF" stroke-width="10" stroke-linecap="round" stroke-dasharray="75.4 251.3" transform="rotate(-90 48 48)"></circle>
+<text x="48" y="48" text-anchor="middle" font-family="Lexend, Verdana, sans-serif" font-size="22" font-weight="600" fill="#EEF2FA">18</text>
+<text x="48" y="64" text-anchor="middle" font-family="Lexend, Verdana, sans-serif" font-size="11" fill="#B4C0D8">min left</text>
+</svg>
+</div>
+<div style="display: flex; gap: 10px"><button class="btn btn-p" style="flex-grow: 1">Done</button><button class="btn btn-s" style="flex-grow: 1">+10 min</button></div>
+</div>
+<div class="card" style="padding: 12px 16px; display: flex; flex-direction: column; gap: 2px">
+<div style="display: flex; justify-content: space-between; align-items: center; min-height: 28px"><p class="lbl">TODAY'S TOP 3</p><a href="#" style="font-size: 13px">4 in Someday</a></div>
+<div class="row"><input type="checkbox" id="i1" checked><label for="i1" style="color: #B4C0D8">Reply to [CLIENT B]'s revision</label></div>
+<div class="row"><input type="checkbox" id="i2"><label for="i2">Rig arm physics for [CLIENT A]</label></div>
+<div class="row"><input type="checkbox" id="i3"><label for="i3">Post Sunday's clip to TikTok</label></div>
+</div>
+<div style="display: flex; gap: 10px">
+<div class="card" style="flex: 1; padding: 10px 10px 10px 14px; display: flex; align-items: center; gap: 8px"><div style="flex-grow: 1"><p class="lbl">WATER</p><p style="margin: 0; font-size: 15px">3 of 8</p></div><button class="ib" aria-label="Add a glass of water" style="background: #FFE08A; color: #0B1330"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></button></div>
+<div class="card" style="flex: 1; padding: 10px 10px 10px 14px; display: flex; align-items: center; gap: 8px"><div style="flex-grow: 1"><p class="lbl">DINNER</p><p style="margin: 0; font-size: 15px">Not yet</p></div><button class="btn" style="height: 44px; padding: 0 14px; border: none; background: #FFE08A; color: #0B1330">Ate</button></div>
+</div>
+</div>
+
+<div class="card" style="flex-grow: 1; padding: 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<div style="display: flex; justify-content: space-between; align-items: center"><h2 style="margin: 0; font-size: 17px; font-weight: 600">Tonight</h2><a href="Calendar.dc.html" style="font-size: 13px">Full calendar</a></div>
+<div style="position: relative; height: 660px; margin-top: 8px">
+<div class="hr" style="top: 0"></div><span class="hl" style="top: 0">6 PM</span>
+<div class="hr" style="top: 110px"></div><span class="hl" style="top: 110px">7 PM</span>
+<div class="hr" style="top: 220px"></div><span class="hl" style="top: 220px">8 PM</span>
+<div class="hr" style="top: 330px"></div><span class="hl" style="top: 330px">9 PM</span>
+<div class="hr" style="top: 440px"></div><span class="hl" style="top: 440px">10 PM</span>
+<div class="hr" style="top: 550px"></div><span class="hl" style="top: 550px">11 PM</span>
+<div class="blk" style="top: 2px; height: 104px; background: #B9A6FF; opacity: 0.55">Edit Sunday's clips<br><span style="font-size: 12px">Done</span></div>
+<div class="blk" style="top: 112px; height: 104px; background: #F4A3C0; outline: 3px solid #EEF2FA; outline-offset: 2px">Rig arm physics<br><span style="font-size: 12px">[CLIENT A]</span></div>
+<div class="blk" style="top: 222px; height: 34px; background: #B9A6FF">Post TikTok clip</div>
+<div class="blk" style="top: 259px; height: 68px; background: #FFE08A">Dinner + water</div>
+<div class="blk" style="top: 387px; height: 104px; background: #7FD6C7">Wind-down<br><span style="font-size: 12px">Store shift tomorrow</span></div>
+<div class="blk" style="top: 497px; height: 34px; background: #7FD6C7">Bedtime</div>
+<div aria-label="Now, 7:42 PM" style="position: absolute; left: 50px; right: 0; top: 187px; height: 2px; background: #FF8A8A"></div>
+<div aria-hidden="true" style="position: absolute; left: 46px; top: 183px; width: 10px; height: 10px; border-radius: 5px; background: #FF8A8A"></div>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":760,"height":820}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
