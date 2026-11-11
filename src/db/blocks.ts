@@ -133,3 +133,11 @@ export async function previousLeftOffNote(block: Block): Promise<Block | undefin
     .filter((b) => b.id !== block.id && b.leftOffNote.trim() && b.start < block.start)
     .sort((a, b) => b.start.localeCompare(a.start))[0]
 }
+
+/** The latest "where I left off" note from any block linked to a task. */
+export async function lastLeftOffNoteForTask(taskId: string): Promise<string | undefined> {
+  const blocks = await db.blocks.where('taskId').equals(taskId).toArray()
+  return blocks
+    .filter((b) => b.leftOffNote.trim())
+    .sort((a, b) => b.start.localeCompare(a.start))[0]?.leftOffNote
+}

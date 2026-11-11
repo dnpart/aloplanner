@@ -129,3 +129,11 @@ export function ClockIcon({ size = 16 }: IconProps) {
     </svg>
   )
 }
+
+export function ChevronIcon({ size = 20 }: IconProps) {
+  return (
+    <svg {...base(size)}>
+      <path d="M9 6l6 6-6 6" />
+    </svg>
+  )
+}

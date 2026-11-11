@@ -1,0 +1,109 @@
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-1) 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.task-list .task-row:last-child {
+  border-bottom: none;
+}
+
+.task-row > input {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0.6875rem 0 0;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+
+.task-row__body {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem 0;
+}
+
+.task-row__title {
+  display: block;
+  cursor: pointer;
+}
+
+.task-row.is-done .task-row__title {
+  color: var(--text-secondary);
+}
+
+.task-row__actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-row__extra {
+  margin-top: var(--space-2);
+}
+
+.task-row__extra .btn {
+  min-height: var(--touch);
+  padding: 0 var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  min-height: 1.75rem;
+}
+
+.card-head a {
+  font-size: var(--text-sm);
+  min-height: var(--touch);
+  display: inline-flex;
+  align-items: center;
+}
+
+.add-row {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.add-row .field {
+  flex: 1;
+  min-width: 0;
+}
+
+.done-list summary {
+  min-height: var(--touch);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.step-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.step-row .choice {
+  flex: 1;
+  min-width: 0;
+}
+
+.step-row.is-done .choice {
+  color: var(--text-secondary);
+}

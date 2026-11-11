@@ -6,6 +6,7 @@ import { useCameBack } from '../hooks/useCameBack'
 import { useTimeEngine } from '../engine/useTimeEngine'
 import { TimeCheckScreen } from '../screens/TimeCheckScreen'
 import { BlockSheet } from '../screens/today/BlockSheet'
+import { TaskSheet } from '../screens/tasks/TaskSheet'
 import './AppShell.css'
 
 const items = [
@@ -41,6 +42,7 @@ export function AppShell() {
       </main>
       <GuideToast />
       <BlockSheet />
+      <TaskSheet />
       <TimeCheckScreen />
     </div>
   )

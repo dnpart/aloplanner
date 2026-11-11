@@ -41,7 +41,7 @@ test('10 minutes before the end, the Time Check opens and saves a note for next 
   render(<App />)
 
   const dialog = await screen.findByRole('dialog', { name: /minutes and \d+ seconds left/ })
-  expect(within(dialog).getByText(/left on Rig arm physics/)).toBeInTheDocument()
+  expect(within(dialog).getByText(/^left on Rig arm physics/)).toBeInTheDocument()
   expect(await within(dialog).findByText('Post clip')).toBeInTheDocument()
   expect(within(dialog).getByLabelText('Save the Live2D file')).toBeInTheDocument()
 

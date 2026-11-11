@@ -14,6 +14,7 @@ import { useSettingsStore } from '../state/settingsStore'
 import { BlockList } from './today/BlockList'
 import { CurrentBlockCard, NextBlockRow, NothingNowCard } from './today/CurrentBlockCard'
 import { DayTimeline } from './today/DayTimeline'
+import { TopThreeCard } from './today/TopThreeCard'
 import './today/Today.css'
 
 export function TodayScreen() {
@@ -58,6 +59,7 @@ export function TodayScreen() {
             ) : (
               blocks && <NothingNowCard />
             )}
+            <TopThreeCard day={day} />
             <NextBlockRow block={next} category={next && categories.get(next.categoryId)} />
             <div className="today__list">
               {blocks && (
