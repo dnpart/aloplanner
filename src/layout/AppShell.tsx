@@ -3,6 +3,8 @@ import { GuideToast } from '../components/GuideToast'
 import { PlanIcon, PlayIcon, StreamIcon, TodayIcon, WorkIcon } from '../components/icons'
 import { labels } from '../content/labels'
 import { useCameBack } from '../hooks/useCameBack'
+import { useTimeEngine } from '../engine/useTimeEngine'
+import { TimeCheckScreen } from '../screens/TimeCheckScreen'
 import { BlockSheet } from '../screens/today/BlockSheet'
 import './AppShell.css'
 
@@ -21,6 +23,7 @@ const items = [
  */
 export function AppShell() {
   useCameBack()
+  useTimeEngine()
   return (
     <div className="shell">
       <nav className="shell__nav" aria-label={labels.mainNav}>
@@ -38,6 +41,7 @@ export function AppShell() {
       </main>
       <GuideToast />
       <BlockSheet />
+      <TimeCheckScreen />
     </div>
   )
 }
