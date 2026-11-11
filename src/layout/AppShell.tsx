@@ -1,6 +1,8 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import { GuideToast } from '../components/GuideToast'
 import { PlanIcon, PlayIcon, StreamIcon, TodayIcon, WorkIcon } from '../components/icons'
 import { labels } from '../content/labels'
+import { useCameBack } from '../hooks/useCameBack'
 import './AppShell.css'
 
 const items = [
@@ -17,6 +19,7 @@ const items = [
  * never remounts the page and no state is lost.
  */
 export function AppShell() {
+  useCameBack()
   return (
     <div className="shell">
       <nav className="shell__nav" aria-label={labels.mainNav}>
@@ -32,6 +35,7 @@ export function AppShell() {
       <main className="shell__main">
         <Outlet />
       </main>
+      <GuideToast />
     </div>
   )
 }

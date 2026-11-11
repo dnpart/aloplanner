@@ -218,3 +218,35 @@ svg {
   outline: 3px solid var(--focus-ring);
   outline-offset: 2px;
 }
+
+/* Radio and checkbox lists with big touch targets */
+.choice-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.choice-group legend {
+  padding: 0;
+  margin-bottom: var(--space-2);
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--touch);
+  cursor: pointer;
+}
+
+.choice input {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}

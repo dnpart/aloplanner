@@ -1,0 +1,1164 @@
+{
+  "messages": [
+    {
+      "id": "task-done-01",
+      "text": "{title}: done. Look at you, crossing things off like a pro.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-02",
+      "text": "Check. The list just got lighter, and so did your brain.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-03",
+      "text": "{title} is handled. I am doing a tiny victory dance in the snow.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-04",
+      "text": "One down. Your future self says thanks.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-05",
+      "text": "Nice work on {title}. That one is officially off your plate.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-06",
+      "text": "Task done. I'd high-five you, but paws make that tricky.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-07",
+      "text": "{title}? Finished. Chat would spam the hype emotes for that.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-08",
+      "text": "Another one bites the snow. Well done.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-09",
+      "text": "Done and dusted. Like fresh powder, but productive.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-10",
+      "text": "{title} is complete. Tail wags fully earned.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-11",
+      "text": "That task never stood a chance against you.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-12",
+      "text": "You finished {title}. Take a breath and enjoy that for a second.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-13",
+      "text": "Checked off. Your to-do list is starting to get nervous.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-14",
+      "text": "{title}, done. Smooth like well-rigged physics.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-15",
+      "text": "Look at that little check mark. You made that.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["task-done"]
+    },
+    {
+      "id": "task-done-16",
+      "text": "{title} wrapped up. I'm telling every fox in the forest.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["task-done"]
+    },
+
+    {
+      "id": "top3-done-01",
+      "text": "All of your Top 3 are done. The crown is yours today.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-02",
+      "text": "Top 3: cleared. I put on my fanciest crown for this.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-03",
+      "text": "Three for three. Someone get this legend a throne.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-04",
+      "text": "Your whole Top 3 is done. This calls for a royal parade.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-05",
+      "text": "Top 3 complete. I hereby declare today a certified win.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-06",
+      "text": "All three, done. That moment deserves to be clipped.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-07",
+      "text": "You cleared the Top 3. Even the snowflakes are applauding.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-08",
+      "text": "Top 3 finished. Please accept this very real imaginary trophy.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-09",
+      "text": "Every single Top 3 task, done. The whole kingdom celebrates.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-10",
+      "text": "Three big wins in one day. Raid-level energy right there.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-11",
+      "text": "Top 3 conquered. I'm adding this to the royal history books.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-12",
+      "text": "All three done. Today you are the main character.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-13",
+      "text": "Top 3 done. The crown fits. It always did.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "calm",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-14",
+      "text": "Hat trick. All three Top 3 tasks are off the board.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-15",
+      "text": "Top 3 cleared. Chat would be losing it right now.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+    {
+      "id": "top3-done-16",
+      "text": "You did all three. I'm waving my tiara around in pure joy.",
+      "character": "fox",
+      "pose": "queen",
+      "tone": "funny",
+      "contexts": ["top3-done"]
+    },
+
+    {
+      "id": "block-done-01",
+      "text": "{title} block: done. That's how you run a schedule.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-02",
+      "text": "Block complete. Time behaved, and so did you.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-03",
+      "text": "{title} is wrapped. Smooth transition, captain.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-04",
+      "text": "Done with that block. The clock is honestly impressed.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-05",
+      "text": "Another block in the books. You and time are on good terms.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-06",
+      "text": "{title} finished right on cue. Chef's kiss.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-07",
+      "text": "Block done. Stretch, sip some water, feel good about it.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-08",
+      "text": "You closed out {title}. That's a clean cut.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-09",
+      "text": "That block is done. The calendar wants your autograph.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-10",
+      "text": "{title}: complete. Like a perfect loop in an animation.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-11",
+      "text": "Block finished. Achievement unlocked: time wizard.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-12",
+      "text": "Wrapped {title} on purpose. Big brain move.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-13",
+      "text": "Done. That block went exactly where you sent it.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-14",
+      "text": "{title} block, checked. Your timeline looks so tidy now.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-15",
+      "text": "Block complete. I'd give you a gold star, but snowflakes will do.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["block-done"]
+    },
+    {
+      "id": "block-done-16",
+      "text": "You finished {title}. Onward, at your own pace.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["block-done"]
+    },
+
+    {
+      "id": "check-in-01",
+      "text": "{minutes} min on {title}. Still the plan?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-02",
+      "text": "{minutes} minutes into {title}. Is this still what you want to do?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-03",
+      "text": "Quick check: {minutes} min on {title}. Still on track with the plan?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-04",
+      "text": "You've spent {minutes} min on {title}. Keep going with it?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-05",
+      "text": "{title} has had {minutes} minutes. Still the right thing right now?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-06",
+      "text": "Owl here. {title} is at {minutes} min. Still the plan for now?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-07",
+      "text": "{minutes} min of {title} so far. Is that still the goal?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-08",
+      "text": "Time check: {title}, {minutes} minutes. Still where you want to be?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-09",
+      "text": "{minutes} minutes on {title}. Sticking with it?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-10",
+      "text": "Tiny tap on the shoulder. {minutes} min on {title}. Still the plan?",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "funny",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-11",
+      "text": "{title}: {minutes} min and counting. Still the thing you picked?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-12",
+      "text": "Lesson of the day: notice the clock. {minutes} min on {title}. Still the plan?",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "funny",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-13",
+      "text": "{minutes} min in. Is {title} still the plan?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-14",
+      "text": "Checking in. {title} at {minutes} min. Want to keep at it?",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-15",
+      "text": "{minutes} minutes have flown by on {title}. Still the right call?",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "calm",
+      "contexts": ["check-in"]
+    },
+    {
+      "id": "check-in-16",
+      "text": "Pop quiz: {minutes} min on {title}. Is this still the plan?",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "funny",
+      "contexts": ["check-in"]
+    },
+
+    {
+      "id": "wrap-up-01",
+      "text": "Hoo's still on {title}? You. Wrap up soon, legend.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "funny",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-02",
+      "text": "Ten minutes left on {title}. Time to start wrapping up.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-03",
+      "text": "{title} ends in 10. Find a good stopping point.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-04",
+      "text": "Start landing the plane on {title}. Ten minutes to go.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "funny",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-05",
+      "text": "The end of {title} is in sight. Start wrapping up now.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-06",
+      "text": "Lesson time: the best ending is a planned one. Start wrapping {title}.",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "funny",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-07",
+      "text": "{title} has about 10 minutes left. Jot a note for next time.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-08",
+      "text": "Wrap-up time for {title}. Leave yourself a breadcrumb to come back to.",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-09",
+      "text": "Ten minutes on {title}. Pick the last small thing and finish that.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-10",
+      "text": "Begin the outro for {title}. Ten minutes left.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "funny",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-11",
+      "text": "{title} is almost done. Start tying off the loose ends.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-12",
+      "text": "Heads up, {title} wraps in 10. Save, note, breathe.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-13",
+      "text": "Rig the ending of {title} now, so the next part runs smooth.",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "funny",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-14",
+      "text": "Ten minutes left for {title}. Not the moment to start something new.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-15",
+      "text": "Owl wisdom: wrap {title} now and future you will be grateful.",
+      "character": "owl",
+      "pose": "bowtie",
+      "tone": "funny",
+      "contexts": ["wrap-up"]
+    },
+    {
+      "id": "wrap-up-16",
+      "text": "{title} has 10 minutes to go. Hit save, then start winding down.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["wrap-up"]
+    },
+
+    {
+      "id": "final-warning-01",
+      "text": "Two minutes left on {title}.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-02",
+      "text": "{title} ends in 2 minutes. Time to stop.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-03",
+      "text": "Almost time. Finish up {title}.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-04",
+      "text": "2 minutes. Let {title} rest here.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-05",
+      "text": "{title} is nearly over. Save and step away.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-06",
+      "text": "Two minutes, then {title} is done for now.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-07",
+      "text": "Time to close {title}. Two minutes left.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-08",
+      "text": "{title} wraps in 2. You did good work.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-09",
+      "text": "Two minutes. Save {title} and get ready for what's next.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-10",
+      "text": "{title} is ending soon. Finish this last bit.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-11",
+      "text": "Nearly there. {title} ends in two minutes.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-12",
+      "text": "Wrap {title} now. The next block is close.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-13",
+      "text": "Two minutes left. Put {title} down gently.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-14",
+      "text": "{title}: 2 minutes. Write down where you stopped.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-15",
+      "text": "{title} is in its final stretch. Two minutes.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+    {
+      "id": "final-warning-16",
+      "text": "Time to let go of {title}. Two minutes left.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["final-warning"]
+    },
+
+    {
+      "id": "block-ended-01",
+      "text": "{title} timed out, and that's okay. The next block is up.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-02",
+      "text": "{title} is behind us. Fresh block, fresh start.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-03",
+      "text": "Psst. {title} has ended. The next thing has already started.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-04",
+      "text": "{title}'s time is done. Come join the next block when you're ready.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-05",
+      "text": "The clock rolled past {title}. No worries, we're on to the next one.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-06",
+      "text": "{title} has wrapped up on its own. The new block is saving you a seat.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-07",
+      "text": "Plot twist: {title} ended. A new block just entered the chat.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-08",
+      "text": "{title} took its bow. The next block is on stage now.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-09",
+      "text": "Time moved on from {title}. You can too, whenever you like.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-10",
+      "text": "{title} clocked out. I hear the next block is pretty fun.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-11",
+      "text": "Heads up, {title} finished. Here's what's next.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-12",
+      "text": "{title} hit its end time. Let's peek at the next block together.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-13",
+      "text": "{title} has left the building. The next block is holding the door.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-14",
+      "text": "{title} logged off. The next block just went live.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "funny",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-15",
+      "text": "{title} is done for now. You can pick it back up another time.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+    {
+      "id": "block-ended-16",
+      "text": "Just so you know, {title} ended. Your next block has begun.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["block-ended"]
+    },
+
+    {
+      "id": "overwhelm-01",
+      "text": "Let's pick one thing. Just one. The rest will wait.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-02",
+      "text": "It's okay to feel like this. Take a slow breath with me.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-03",
+      "text": "You don't have to do it all today. One small step is enough.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-04",
+      "text": "The list can wait. You are allowed to rest first.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-05",
+      "text": "Put everything down for a moment. Breathe in. Breathe out.",
+      "character": "owl",
+      "pose": "sleepy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-06",
+      "text": "Nothing needs to happen all at once. One thing at a time.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-07",
+      "text": "Choose the smallest next step. Only that one.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-08",
+      "text": "It's okay to slow down. Everything else can wait.",
+      "character": "fox",
+      "pose": "sleepy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-09",
+      "text": "You are doing enough. Let's look at just one task.",
+      "character": "owl",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-10",
+      "text": "Feeling a lot is okay. Have some water, then pick one thing.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-11",
+      "text": "Close your eyes for a moment. The plan can wait a few minutes.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-12",
+      "text": "I'm right here. We'll take this one small piece at a time.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-13",
+      "text": "Not everything has to happen now. Pick one thing that matters most.",
+      "character": "owl",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-14",
+      "text": "You can let some things go today. That is okay.",
+      "character": "fox",
+      "pose": "neutral",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-15",
+      "text": "Rest your mind for a minute. Nothing is going anywhere.",
+      "character": "owl",
+      "pose": "sleepy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+    {
+      "id": "overwhelm-16",
+      "text": "One thing. Then a break. That is a good plan.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "calm",
+      "contexts": ["overwhelm"]
+    },
+
+    {
+      "id": "came-back-01",
+      "text": "Hey, welcome back. Good to see you.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-02",
+      "text": "You're back. The snow kept your spot cozy. Well, cold. Cozy-cold.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-03",
+      "text": "Welcome back. Let's see what's next together.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-04",
+      "text": "There you are. I saved you the comfiest snowbank.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-05",
+      "text": "Hi again. Everything is right where you left it.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-06",
+      "text": "Look who's here. My favorite human just logged in.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-07",
+      "text": "Welcome back. Want a quick look at today?",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-08",
+      "text": "You're back. Chat would type 'welcome back' about forty times.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-09",
+      "text": "Hello again. Grab some water and let's catch up.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-10",
+      "text": "And the star of the show returns. Hi.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-11",
+      "text": "Good to have you here. Take your time settling in.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-12",
+      "text": "I brought snacks. Imaginary ones, but the thought counts.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-13",
+      "text": "Welcome back. Your plan is ready when you are.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-14",
+      "text": "Welcome back. I was just practicing my tail fluff routine.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-15",
+      "text": "Hey there. Let's ease back in, nice and gentle.",
+      "character": "fox",
+      "pose": "waving",
+      "tone": "calm",
+      "contexts": ["came-back"]
+    },
+    {
+      "id": "came-back-16",
+      "text": "You've returned, and the vibes instantly improved.",
+      "character": "fox",
+      "pose": "happy",
+      "tone": "funny",
+      "contexts": ["came-back"]
+    }
+  ]
+}

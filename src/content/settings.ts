@@ -6,6 +6,16 @@ export const settingsCopy = {
     name: 'Your name',
     textSize: 'Text size',
   },
+  messages: {
+    heading: 'Fox and owl',
+    legend: 'How often should they cheer you on?',
+    hint: 'Time checks always show. This only changes the extra cheering.',
+    options: [
+      { value: 'low', label: 'Now and then' },
+      { value: 'normal', label: 'Normal' },
+      { value: 'high', label: 'Every win' },
+    ] as const,
+  },
   notifications: {
     heading: 'Notifications',
     intro: 'Get time checks and nudges when the app is in the background.',

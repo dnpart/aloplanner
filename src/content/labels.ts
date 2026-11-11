@@ -6,6 +6,7 @@ export const labels = {
   save: 'Save',
   cancel: 'Cancel',
   done: 'Done',
+  gotIt: 'Got it',
   mainNav: 'Main',
   nav: {
     today: 'Today',
