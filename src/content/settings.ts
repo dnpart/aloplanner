@@ -6,6 +6,19 @@ export const settingsCopy = {
     name: 'Your name',
     textSize: 'Text size',
   },
+  notifications: {
+    heading: 'Notifications',
+    intro: 'Get time checks and nudges when the app is in the background.',
+    turnOn: 'Turn on notifications',
+    status: {
+      granted: 'Notifications are on.',
+      default: 'Notifications are off.',
+      denied: 'Notifications are blocked. You can allow them in your browser’s site settings.',
+      unsupported: 'This browser can’t show notifications. Alerts still show inside the app.',
+    },
+    webLimit:
+      'On the web, alerts only arrive while the app is open, even in the background. The Android app will fix this.',
+  },
   backup: {
     heading: 'Backup',
     intro: ['Your plans live only on this device.', 'Save a backup file now and then.'],
