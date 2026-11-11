@@ -142,3 +142,48 @@
 .today-plan__row.is-current .today-plan__title {
   font-weight: 600;
 }
+
+.health {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
+.health__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.health__row + .health__row {
+  border-top: 1px solid var(--divider);
+  padding-top: var(--space-2);
+}
+
+.health__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.health__add,
+.health__ate {
+  background: var(--cat-health);
+  color: var(--text-on-light);
+}
+
+.health .icon-btn:disabled {
+  opacity: 0.4;
+}
+
+.health__ate {
+  min-height: var(--touch);
+  padding: 0 var(--space-4);
+}
+
+.health__ate[aria-pressed='true'] {
+  background: transparent;
+  border-color: var(--cat-health);
+  color: var(--cat-health);
+}
