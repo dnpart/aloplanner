@@ -3,6 +3,7 @@ import { BackIcon } from '../components/icons'
 import { labels } from '../content/labels'
 import { screens } from '../content/screens'
 import { Screen } from '../layout/Screen'
+import { BackupSection } from './settings/BackupSection'
 
 export function SettingsScreen() {
   return (
@@ -14,7 +15,7 @@ export function SettingsScreen() {
         </Link>
       }
     >
-      {null}
+      <BackupSection />
     </Screen>
   )
 }

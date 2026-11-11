@@ -195,3 +195,26 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+.status:empty {
+  display: none;
+}
+
+.status--ok {
+  color: var(--cat-life);
+}
+
+.status--error {
+  color: var(--danger);
+}
+
+.backup__counts {
+  margin: 0;
+  padding-left: var(--space-5);
+}
+
+/* File inputs are hidden behind a styled label; show focus on the label. */
+.visually-hidden:focus-visible + label {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
