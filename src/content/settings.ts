@@ -1,6 +1,11 @@
 import type { BackupErrorCode } from '../db/backup'
 
 export const settingsCopy = {
+  details: {
+    heading: 'You',
+    name: 'Your name',
+    textSize: 'Text size',
+  },
   backup: {
     heading: 'Backup',
     intro: ['Your plans live only on this device.', 'Save a backup file now and then.'],

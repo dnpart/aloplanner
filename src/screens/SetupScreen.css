@@ -1,0 +1,38 @@
+.setup {
+  width: 100%;
+  max-width: 32rem;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-4) calc(var(--space-6) + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.setup__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--touch);
+}
+
+.setup__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.setup__body h1:focus {
+  outline: none;
+}
+
+.setup__actions {
+  margin-top: auto;
+  display: flex;
+  gap: var(--space-3);
+}
+
+.setup__actions .btn {
+  flex: 1;
+}

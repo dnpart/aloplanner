@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { AppRoutes } from './AppRoutes'
 import { StarField } from './components/StarField'
 import { requestPersistentStorage } from './db/db'
+import { SetupScreen } from './screens/SetupScreen'
 import { useSettingsStore } from './state/settingsStore'
 
 export function App() {
@@ -21,7 +22,7 @@ export function App() {
   return (
     <>
       <StarField />
-      {settings && <AppRoutes />}
+      {settings && (settings.onboarded ? <AppRoutes /> : <SetupScreen />)}
     </>
   )
 }

@@ -4,6 +4,7 @@ import { labels } from '../content/labels'
 import { screens } from '../content/screens'
 import { Screen } from '../layout/Screen'
 import { BackupSection } from './settings/BackupSection'
+import { DetailsSection } from './settings/DetailsSection'
 
 export function SettingsScreen() {
   return (
@@ -15,6 +16,7 @@ export function SettingsScreen() {
         </Link>
       }
     >
+      <DetailsSection />
       <BackupSection />
     </Screen>
   )
