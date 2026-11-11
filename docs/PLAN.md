@@ -103,15 +103,15 @@ Done when: he can open the Pages link on his Fold, complete setup, and switch be
 
 ### Phase 1: Today and time awareness
 
-- [ ] Block and Task tables
-- [ ] Today screen (cover and inner layouts per mockups): current block with ring, Top 3, water and meals, next block, brain dump button
-- [ ] Simple day timeline on the inner screen with a "now" line
-- [ ] Add/edit block sheet
-- [ ] Time awareness engine: check-ins, wrap-up warnings, Time Check screen, extensions, "where I left off" notes
-- [ ] Top 3 picker, Someday list, "Too much" mode, Break it down
-- [ ] Brain dump inbox
-- [ ] Encouragement system with the first message bank
-- [ ] Web notifications through `notify.ts` (best effort; the app must also work fully in-app if notifications are denied)
+- [x] Block and Task tables
+- [x] Today screen (cover and inner layouts per mockups): current block with ring, Top 3, water and meals, next block, brain dump button
+- [x] Simple day timeline on the inner screen with a "now" line
+- [x] Add/edit block sheet
+- [x] Time awareness engine: check-ins, wrap-up warnings, Time Check screen, extensions, "where I left off" notes
+- [x] Top 3 picker, Someday list, "Too much" mode, Break it down
+- [x] Brain dump inbox
+- [x] Encouragement system with the first message bank
+- [x] Web notifications through `notify.ts` (best effort; the app must also work fully in-app if notifications are denied)
 
 Done when: he can plan a day of blocks, and the app interrupts him reliably while the app is open.
 

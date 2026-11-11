@@ -82,3 +82,31 @@ test('a failed import changes nothing', async () => {
   await expect(importBackup(bad, 'replace')).rejects.toThrow()
   expect((await getSettings()).displayName).toBe('Before')
 })
+
+test('backups carry blocks, tasks, brain dump, and water and meals', async () => {
+  const { newBlock, saveBlock } = await import('./blocks')
+  const { addTask, addStep } = await import('./tasks')
+  const { addBrainDump } = await import('./brainDump')
+  const { changeWater } = await import('./health')
+  await saveBlock(
+    newBlock({
+      title: 'Rig',
+      categoryId: 'commission',
+      start: '2026-11-10T19:00:00',
+      end: '2026-11-10T20:00:00',
+      leftOffNote: 'Left arm done',
+    }),
+  )
+  const task = await addTask('Rig model')
+  await addStep(task.id, 'Face')
+  await addBrainDump('Buy mic foam')
+  await changeWater('2026-11-10', 3)
+  const text = serializeBackup(await exportBackup())
+
+  await resetDb()
+  await importBackup(parseBackup(text), 'replace')
+  expect((await db.blocks.toArray())[0]?.leftOffNote).toBe('Left arm done')
+  expect((await db.tasks.toArray())[0]?.steps.map((s) => s.text)).toEqual(['Face'])
+  expect((await db.brainDump.toArray())[0]?.text).toBe('Buy mic foam')
+  expect((await db.healthLogs.get('2026-11-10'))?.water).toBe(3)
+})
