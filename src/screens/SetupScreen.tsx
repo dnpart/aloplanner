@@ -1,6 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { Guide } from '../components/Guide'
-import { ReadAloudButton } from '../components/ReadAloudButton'
 import { Stepper } from '../components/Stepper'
 import { TextSizePicker } from '../components/TextSizePicker'
 import { formatHours, formatMinutes, setupCopy as copy } from '../content/setup'
@@ -32,7 +31,6 @@ export function SetupScreen() {
     getReadyMinutes: saved?.getReadyMinutes ?? 45,
     commuteMinutes: saved?.commuteMinutes ?? 20,
   }))
-  const rootRef = useRef<HTMLElement>(null)
   const headingRef = useRef<HTMLHeadingElement>(null)
   const nameId = useId()
   const nameHintId = useId()
@@ -65,10 +63,9 @@ export function SetupScreen() {
   const isLast = index === STEPS.length - 1
 
   return (
-    <main className="setup" ref={rootRef}>
+    <main className="setup">
       <header className="setup__header">
         <p className="label">{copy.progress(index + 1, STEPS.length)}</p>
-        <ReadAloudButton target={rootRef} />
       </header>
 
       <form

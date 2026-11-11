@@ -98,7 +98,6 @@ Backup: export all tables to one JSON file with a schema version. Import validat
 - [x] Dexie database with Settings and Category tables, migrations set up
 - [x] Export/import backup screen in Settings
 - [x] First-time setup: name, sleep hours, get-ready and commute time, text size
-- [x] Read-aloud helper and button component
 
 Done when: he can open the Pages link on his Fold, complete setup, and switch between folded and unfolded without layout breaking.
 
@@ -168,7 +167,7 @@ Note: browser data does not carry over to the APK. Use export/import to move tes
 
 ### Phase 7: Learn (guides)
 
-Short card-based guides, each readable in under 2 minutes, with read-aloud. The owl offers them in context (e.g. first time he plans a week, offer the time blocking guide).
+Short card-based guides, each readable in under 2 minutes. The owl offers them in context (e.g. first time he plans a week, offer the time blocking guide).
 
 - [ ] Time blocking
 - [ ] Timeboxing and buffers (why blocks need breathing room)
@@ -214,5 +213,4 @@ Also needed for Phase 9: an app icon. A simplified fox head on the night-blue ba
 - [ ] Inner screen, both orientations
 - [ ] Fold and unfold mid-task: no lost state
 - [ ] Largest text size: nothing clipped or overlapping
-- [ ] Read-aloud works on every main screen
 - [ ] Airplane mode: everything works

@@ -1,7 +1,5 @@
 /** Short UI labels shared across screens. */
 export const labels = {
-  readAloud: 'Read this screen aloud',
-  stopReading: 'Stop reading',
   settings: 'Settings',
   back: 'Back',
   next: 'Next',

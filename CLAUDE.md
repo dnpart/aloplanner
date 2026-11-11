@@ -62,7 +62,7 @@ Day mode (later): sky gradient `#BFE0F7` → `#F4F9FD` with soft clouds, cards w
 - Left-aligned text only. Never justify. No all-caps for body text (short labels are fine). No strikethrough for completed items: dim them and show a check instead.
 - Short sentences. One idea per line where possible.
 - Every icon has a visible text label or an `aria-label`.
-- Read-aloud button on every main screen, using the Web Speech API (`speechSynthesis`) now and native TTS later.
+- No read-aloud or text-to-speech. It was tried and removed: the synthetic voice is more annoying than helpful for him.
 - Touch targets at least 44×44px.
 - Text contrast at least 4.5:1.
 - Respect `prefers-reduced-motion`.
