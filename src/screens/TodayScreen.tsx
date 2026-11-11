@@ -19,6 +19,7 @@ import { CurrentBlockCard, NextBlockRow, NothingNowCard } from './today/CurrentB
 import { DayTimeline } from './today/DayTimeline'
 import { CalmMessage, OneNextStepCard } from './today/CalmView'
 import { HealthCard } from './today/HealthCard'
+import { InboxLink } from './today/InboxLink'
 import { TopThreeCard } from './today/TopThreeCard'
 import './today/Today.css'
 
@@ -87,6 +88,7 @@ export function TodayScreen() {
                 <TopThreeCard day={day} />
                 <HealthCard day={day} hour={now.getHours()} waterGoal={settings?.waterGoal ?? 8} />
                 <NextBlockRow block={next} category={next && categories.get(next.categoryId)} />
+                <InboxLink />
                 <div className="today__list">
                   {blocks && (
                     <BlockList blocks={blocks} categories={categories} currentId={current?.id} />

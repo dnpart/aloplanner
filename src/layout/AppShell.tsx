@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import { BrainDumpButtons, BrainDumpSheet } from '../components/BrainDump'
 import { GuideToast } from '../components/GuideToast'
 import { PlanIcon, PlayIcon, StreamIcon, TodayIcon, WorkIcon } from '../components/icons'
 import { labels } from '../content/labels'
@@ -36,6 +37,7 @@ export function AppShell() {
             {label}
           </NavLink>
         ))}
+        <BrainDumpButtons />
       </nav>
       <main className="shell__main">
         <Outlet />
@@ -43,6 +45,7 @@ export function AppShell() {
       <GuideToast />
       <BlockSheet />
       <TaskSheet />
+      <BrainDumpSheet />
       <TimeCheckScreen />
     </div>
   )

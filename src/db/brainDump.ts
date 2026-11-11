@@ -25,3 +25,8 @@ export async function markProcessed(id: string): Promise<void> {
 export async function deleteBrainDump(id: string): Promise<void> {
   await db.brainDump.delete(id)
 }
+
+/** Puts an item back exactly as it was (used by Undo). */
+export async function restoreBrainDump(item: BrainDumpItem): Promise<void> {
+  await db.brainDump.put(item)
+}

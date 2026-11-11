@@ -85,9 +85,8 @@ test('"Too much" hides everything but the current block and one next step', asyn
   await screen.findByRole('region', { name: 'Today’s Top 3' })
   await user.click(screen.getByRole('button', { name: 'Too much?' }))
 
-  expect(await screen.findByRole('region', { name: 'One next step' })).toHaveTextContent(
-    /Post clip at/,
-  )
+  const step = await screen.findByRole('region', { name: 'One next step' })
+  await waitFor(() => expect(step).toHaveTextContent(/Post clip at/))
   expect(screen.getByRole('region', { name: 'Rig arm physics' })).toBeInTheDocument()
   expect(screen.queryByRole('region', { name: 'Today’s Top 3' })).not.toBeInTheDocument()
   expect(screen.queryByRole('region', { name: 'Today’s plan' })).not.toBeInTheDocument()

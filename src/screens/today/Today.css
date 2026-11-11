@@ -205,3 +205,14 @@
 .today.is-calm .today__timeline {
   display: none;
 }
+
+.inbox-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  min-height: 3.25rem;
+  padding: var(--space-2) var(--space-4);
+  color: var(--text);
+  text-decoration: none;
+}

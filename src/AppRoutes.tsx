@@ -1,6 +1,7 @@
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { screens } from './content/screens'
 import { AppShell } from './layout/AppShell'
+import { InboxScreen } from './screens/InboxScreen'
 import { PlaceholderScreen } from './screens/PlaceholderScreen'
 import { SettingsScreen } from './screens/SettingsScreen'
 import { TasksScreen } from './screens/TasksScreen'
@@ -54,6 +55,7 @@ export function AppRoutes() {
           />
           <Route path="/settings" element={<SettingsScreen />} />
           <Route path="/tasks" element={<TasksScreen />} />
+          <Route path="/inbox" element={<InboxScreen />} />
           <Route path="*" element={<Navigate to="/today" replace />} />
         </Route>
       </Routes>

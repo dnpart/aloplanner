@@ -26,3 +26,10 @@ export const useGuideStore = create<GuideState>((set) => ({
   show: (notice) => set({ notice }),
   dismiss: (key) => set((s) => (key && s.notice?.key !== key ? s : { notice: null })),
 }))
+
+let noticeCounter = 0
+
+/** Shows a one-off notice that isn't from the message bank. */
+export function showNotice(notice: Omit<GuideNotice, 'key'>): void {
+  useGuideStore.getState().show({ ...notice, key: `notice-${++noticeCounter}` })
+}

@@ -1,7 +1,8 @@
 .shell__main {
   width: 100%;
+  /* Room for the bottom nav and the floating Brain dump button. */
   padding: var(--space-4) var(--space-4)
-    calc(var(--bottom-nav-height) + var(--space-6) + env(safe-area-inset-bottom));
+    calc(var(--bottom-nav-height) + 4.5rem + env(safe-area-inset-bottom));
 }
 
 .shell__nav {

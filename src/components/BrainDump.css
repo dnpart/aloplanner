@@ -1,0 +1,33 @@
+.brain-dump-fab {
+  position: fixed;
+  z-index: 15;
+  right: var(--space-4);
+  bottom: calc(var(--bottom-nav-height) + var(--space-3) + env(safe-area-inset-bottom));
+  background: var(--text);
+  color: var(--text-on-light);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.brain-dump-rail {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .brain-dump-fab {
+    display: none;
+  }
+
+  .brain-dump-rail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: var(--space-4);
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 18px;
+    background: var(--text);
+    color: var(--text-on-light);
+  }
+}
