@@ -20,7 +20,9 @@
 }
 
 .shell__nav-item {
-  min-width: 4rem;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 6rem;
   min-height: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -63,6 +65,12 @@
     padding: var(--space-5) 0 env(safe-area-inset-bottom);
     border-top: none;
     border-right: 1px solid var(--divider);
+  }
+
+  .shell__nav-item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
   }
 
   .shell__main {
