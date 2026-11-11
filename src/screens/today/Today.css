@@ -187,3 +187,21 @@
   border-color: var(--cat-health);
   color: var(--cat-health);
 }
+
+.calm__step {
+  font-size: var(--text-lg);
+  font-weight: 500;
+}
+
+.too-much {
+  align-self: flex-start;
+}
+
+/* In "Too much" mode, Today is one calm column. */
+.today.is-calm {
+  grid-template-columns: minmax(0, 32rem);
+}
+
+.today.is-calm .today__timeline {
+  display: none;
+}

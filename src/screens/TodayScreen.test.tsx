@@ -59,3 +59,39 @@ test('adds a block from the Today screen', async () => {
   expect(blocks.map((b) => [b.title, b.categoryId])).toEqual([['Edit clips', 'stream']])
   expect((await screen.findAllByRole('button', { name: /Edit clips/ })).length).toBeGreaterThan(0)
 })
+
+test('"Too much" hides everything but the current block and one next step', async () => {
+  const { useCalm } = await import('../state/calmStore')
+  useCalm.setState({ calm: false, message: undefined })
+  await saveBlock(
+    newBlock({
+      title: 'Rig arm physics',
+      categoryId: 'commission',
+      start: minutesFromNow(-10),
+      end: minutesFromNow(50),
+    }),
+  )
+  await saveBlock(
+    newBlock({
+      title: 'Post clip',
+      categoryId: 'stream',
+      start: minutesFromNow(50),
+      end: minutesFromNow(65),
+    }),
+  )
+  const user = userEvent.setup()
+  render(<App />)
+
+  await screen.findByRole('region', { name: 'Today’s Top 3' })
+  await user.click(screen.getByRole('button', { name: 'Too much?' }))
+
+  expect(await screen.findByRole('region', { name: 'One next step' })).toHaveTextContent(
+    /Post clip at/,
+  )
+  expect(screen.getByRole('region', { name: 'Rig arm physics' })).toBeInTheDocument()
+  expect(screen.queryByRole('region', { name: 'Today’s Top 3' })).not.toBeInTheDocument()
+  expect(screen.queryByRole('region', { name: 'Today’s plan' })).not.toBeInTheDocument()
+
+  await user.click(screen.getByRole('button', { name: 'Show everything' }))
+  expect(await screen.findByRole('region', { name: 'Today’s Top 3' })).toBeInTheDocument()
+})

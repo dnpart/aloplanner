@@ -8,12 +8,16 @@ import { todayCopy } from '../content/today'
 import { currentBlock, nextBlock } from '../db/blocks'
 import { useBlocksForDay, useCategoryMap } from '../hooks/useData'
 import { useNow } from '../hooks/useNow'
+import { overwhelmCopy } from '../content/overwhelm'
+import { encourage } from '../messages/encourage'
+import { useCalm } from '../state/calmStore'
 import { Screen } from '../layout/Screen'
 import { dayKey } from '../lib/dates'
 import { useSettingsStore } from '../state/settingsStore'
 import { BlockList } from './today/BlockList'
 import { CurrentBlockCard, NextBlockRow, NothingNowCard } from './today/CurrentBlockCard'
 import { DayTimeline } from './today/DayTimeline'
+import { CalmMessage, OneNextStepCard } from './today/CalmView'
 import { HealthCard } from './today/HealthCard'
 import { TopThreeCard } from './today/TopThreeCard'
 import './today/Today.css'
@@ -26,6 +30,11 @@ export function TodayScreen() {
   const categories = useCategoryMap()
   const current = blocks ? currentBlock(blocks, now) : undefined
   const next = blocks ? nextBlock(blocks, now, current) : undefined
+  const calm = useCalm((s) => s.calm)
+  const enterCalm = async () => {
+    const shown = await encourage('overwhelm', { display: 'none' })
+    useCalm.getState().enter(shown)
+  }
 
   return (
     <Screen
@@ -38,9 +47,20 @@ export function TodayScreen() {
       }
     >
       <div className="today-wrap">
-        <div className="today">
+        <div className={`today${calm ? ' is-calm' : ''}`}>
           <div className="today__main">
-            {blocks?.length === 0 && (
+            {calm ? (
+              <CalmMessage />
+            ) : (
+              <button
+                type="button"
+                className="btn btn-quiet too-much"
+                onClick={() => void enterCalm()}
+              >
+                {overwhelmCopy.button}
+              </button>
+            )}
+            {!calm && blocks?.length === 0 && (
               <Guide
                 character="owl"
                 pose="happy"
@@ -58,16 +78,22 @@ export function TodayScreen() {
                 extensionsPerBlock={settings.extensionsPerBlock}
               />
             ) : (
-              blocks && <NothingNowCard />
+              blocks && !calm && <NothingNowCard />
             )}
-            <TopThreeCard day={day} />
-            <HealthCard day={day} hour={now.getHours()} waterGoal={settings?.waterGoal ?? 8} />
-            <NextBlockRow block={next} category={next && categories.get(next.categoryId)} />
-            <div className="today__list">
-              {blocks && (
-                <BlockList blocks={blocks} categories={categories} currentId={current?.id} />
-              )}
-            </div>
+            {calm ? (
+              <OneNextStepCard day={day} current={current} next={next} />
+            ) : (
+              <>
+                <TopThreeCard day={day} />
+                <HealthCard day={day} hour={now.getHours()} waterGoal={settings?.waterGoal ?? 8} />
+                <NextBlockRow block={next} category={next && categories.get(next.categoryId)} />
+                <div className="today__list">
+                  {blocks && (
+                    <BlockList blocks={blocks} categories={categories} currentId={current?.id} />
+                  )}
+                </div>
+              </>
+            )}
           </div>
           <div className="today__timeline">
             {blocks && (
