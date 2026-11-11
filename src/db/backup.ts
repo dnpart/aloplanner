@@ -36,6 +36,16 @@ const rowChecks: Record<string, RowCheck> = {
     typeof r.name === 'string' &&
     typeof r.color === 'string' &&
     typeof r.builtIn === 'boolean',
+  blocks: (r) =>
+    typeof r.id === 'string' &&
+    typeof r.title === 'string' &&
+    typeof r.start === 'string' &&
+    typeof r.end === 'string',
+  tasks: (r) => typeof r.id === 'string' && typeof r.title === 'string' && Array.isArray(r.steps),
+  brainDump: (r) => typeof r.id === 'string' && typeof r.text === 'string',
+  healthLogs: (r) => typeof r.date === 'string' && typeof r.water === 'number',
+  messageLog: (r) => typeof r.messageId === 'string' && typeof r.shownAt === 'string',
+  meta: (r) => typeof r.key === 'string' && typeof r.value === 'string',
 }
 
 /** Snapshot of every table, so new tables are included automatically. */
@@ -108,8 +118,7 @@ export function parseBackup(text: string): BackupFile {
  */
 export function migrateBackup(backup: BackupFile): BackupFile {
   const result = { ...backup, tables: { ...backup.tables } }
-  // Example for the future:
-  // if (result.schemaVersion < 2) { result.tables.tasks = []; result.schemaVersion = 2 }
+  // v1 -> v2 only added tables, so v1 files import as they are.
   result.schemaVersion = SCHEMA_VERSION
   return result
 }

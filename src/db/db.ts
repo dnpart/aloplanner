@@ -1,6 +1,15 @@
 import { Dexie, type EntityTable } from 'dexie'
 import { BUILT_IN_CATEGORIES, DEFAULT_SETTINGS } from './defaults'
-import type { Category, Settings } from './types'
+import type {
+  Block,
+  BrainDumpItem,
+  Category,
+  HealthLog,
+  MessageLog,
+  MetaEntry,
+  Settings,
+  Task,
+} from './types'
 
 /**
  * The one database. All reads and writes go through src/db/.
@@ -14,6 +23,12 @@ import type { Category, Settings } from './types'
 export class AloplannerDB extends Dexie {
   settings!: EntityTable<Settings, 'id'>
   categories!: EntityTable<Category, 'id'>
+  blocks!: EntityTable<Block, 'id'>
+  tasks!: EntityTable<Task, 'id'>
+  brainDump!: EntityTable<BrainDumpItem, 'id'>
+  healthLogs!: EntityTable<HealthLog, 'date'>
+  messageLog!: EntityTable<MessageLog, 'messageId'>
+  meta!: EntityTable<MetaEntry, 'key'>
 
   constructor(name = 'aloplanner') {
     super(name)
@@ -22,6 +37,17 @@ export class AloplannerDB extends Dexie {
     this.version(1).stores({
       settings: 'id',
       categories: 'id, name',
+    })
+
+    // v2: Phase 1. New tables only, so existing data needs no migration.
+    // Booleans can't be indexed in IndexedDB, so done/someday/processed are filtered in memory.
+    this.version(2).stores({
+      blocks: 'id, start, end, taskId',
+      tasks: 'id, topThreeDate, dueDate',
+      brainDump: 'id, createdAt',
+      healthLogs: 'date',
+      messageLog: 'messageId, shownAt',
+      meta: 'key',
     })
 
     this.on('populate', (tx) => {
@@ -34,7 +60,7 @@ export class AloplannerDB extends Dexie {
 export const db = new AloplannerDB()
 
 /** Current schema version, written into backups. */
-export const SCHEMA_VERSION = 1
+export const SCHEMA_VERSION = 2
 
 /**
  * Ask the browser not to evict our data under storage pressure.

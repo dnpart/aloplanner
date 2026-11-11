@@ -36,6 +36,12 @@ export const settingsCopy = {
   tableNames: {
     settings: ['settings record', 'settings records'],
     categories: ['category', 'categories'],
+    blocks: ['block', 'blocks'],
+    tasks: ['task', 'tasks'],
+    brainDump: ['brain dump note', 'brain dump notes'],
+    healthLogs: ['day of water and meals', 'days of water and meals'],
+    messageLog: ['shown message', 'shown messages'],
+    meta: ['app note', 'app notes'],
   } as Record<string, [string, string]>,
 } as const
 

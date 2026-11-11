@@ -23,7 +23,7 @@ test('export then replace-import restores every table', async () => {
 
   await resetDb()
   const parsed = parseBackup(text)
-  expect(countRows(parsed)).toEqual({ settings: 1, categories: 6 })
+  expect(countRows(parsed)).toMatchObject({ settings: 1, categories: 6, blocks: 0, tasks: 0 })
   await importBackup(parsed, 'replace')
 
   const settings = await getSettings()

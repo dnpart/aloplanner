@@ -110,9 +110,11 @@ export function BackupSection() {
         <div className="stack">
           <p>{copy.previewIntro(exportedLabel)}</p>
           <ul className="backup__counts">
-            {Object.entries(countRows(pending)).map(([table, count]) => (
-              <li key={table}>{describeCount(table, count)}</li>
-            ))}
+            {Object.entries(countRows(pending))
+              .filter(([table, count]) => count > 0 && table !== 'messageLog' && table !== 'meta')
+              .map(([table, count]) => (
+                <li key={table}>{describeCount(table, count)}</li>
+              ))}
           </ul>
           {!confirmReplace ? (
             <>
